@@ -1,0 +1,21 @@
+.ButtonBaseGreen{
+    background-color: var(--color-primary);
+    height: 4vh;
+    padding: 0.6rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--color-bg);
+    font-size: clamp(1rem, .08vw, 3rem);
+    font-weight: 550;
+}
+
+.ButtonBaseWhite{
+    background-color: var(--color-bg);
+    height: 4vh;
+    padding: 0.6rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--color-text);
+    font-size: clamp(1rem, .08vw, 3rem);
+    font-weight: 550;
+}

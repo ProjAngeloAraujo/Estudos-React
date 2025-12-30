@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #00caa0;
+  --color-secondary: #2c2d30;
+  --color-text: black;
+  --color-muted: #6b7280;
+  --color-bg: #ffffff;
+
+  --font-base: 'Inter', system-ui, sans-serif;
+}
