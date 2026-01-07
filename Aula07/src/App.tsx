@@ -1,5 +1,8 @@
 import Header from "../src/components/Header"
 import Hero from "../src/components/Hero"
+import Card from "../src/components/Card"
+import Form from "../src/components/Form"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -7,6 +10,9 @@ function App() {
     <>
       <Header></Header>
       <Hero></Hero>
+      <Card></Card>
+      <Form></Form>
+      <Footer></Footer>
     </>
   )
 
