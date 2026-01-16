@@ -1,0 +1,6 @@
+CORES:
+    Rosa -- #f9f2fa
+    Roxo Escuro -- #2a2079
+    Cinza -- #979bb4
+    Roxo Claro -- #7e71d4
+    Marrom -- #7c7c7c
