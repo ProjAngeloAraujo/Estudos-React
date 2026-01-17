@@ -1,18 +1,16 @@
-import { Titulo } from "./components/Texto"
+import { ModalTitulo } from "./Modals/ModalTitulo";
+import { useState } from "react";
 
 function App() {
+
+  const [dataSelecionada, setDataSelecionada] = useState<string>("");
+
+
   return (
     <body className=" bg-[#f9f2fa] h-screen w-screen p-[2vw] " >
 
-      <div className=" bg-white flex items-center py-[1vh] ">
-        <p>testtinho</p>
+      <ModalTitulo onChangeData={setDataSelecionada} ></ModalTitulo>
 
-        <div className="mx-auto">
-          <Titulo>
-            Texto
-          </Titulo>
-        </div>
-      </div>
 
     </body>
   )
