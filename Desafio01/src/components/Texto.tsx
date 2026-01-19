@@ -1,5 +1,7 @@
-interface Texto {
-    children: string;
+import type { ReactNode } from "react";
+
+type Texto = {
+    children: ReactNode;
 }
 
 export function Titulo ( {children}:Texto ) {
@@ -27,5 +29,31 @@ export function Titulo2 ( {children}:Texto ) {
         " >
             {children}
         </h2>
+    )
+}
+
+export function Subtitulo ( {children}:Texto ) {
+    return (
+        <h3 className="
+        text-[#979bb4]
+        text-[12px]
+        md:text-[18px]
+        lg:text-[3vh]
+        font-bold
+        " >
+            {children}
+        </h3>
+    )
+}
+
+export function TextoOrcamento ( {children}:Texto ) {
+    return (
+        <h3 className="
+        text-[18px]
+        md:text-[24px]
+        lg:text-[5vh]
+        " >
+            {children}
+        </h3>
     )
 }
