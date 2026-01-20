@@ -12,7 +12,7 @@ export function MOdalCustoMensal ( { DataMensal }: Data ) {
 
     return (
         <div className=" w-[100%] flex " >
-            <Caixa className={"flex items-center justify-center gap-[2vh] "} >
+            <Caixa className={"flex items-center justify-center gap-[2vh] flex-1 "} >
                 <Subtitulo>
                     TOTAL GASTO NESSE MÊS
                 </Subtitulo>
