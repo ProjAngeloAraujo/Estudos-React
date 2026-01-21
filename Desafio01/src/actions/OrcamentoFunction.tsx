@@ -45,5 +45,6 @@ export function getOrcamentoMes(mesAno: string): number {
     }
   });
 
-  return soma;
+  return Number(soma.toFixed(2));
+
 }
