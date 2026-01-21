@@ -1,6 +1,7 @@
 import { ModalTitulo } from "./Modals/ModalTitulo";
 import { MOdalCustoMensal } from "./Modals/ModalCustoMensal";
-import { Caixa } from "./components/Caixa";
+import { ModalGrafico } from "./Modals/ModalGrafico";
+import { ModalTabela } from "./Modals/ModalTabela";
 import { useState } from "react";
 
 function App() {
@@ -14,10 +15,8 @@ function App() {
       <ModalTitulo onChangeData={setDataSelecionada} ></ModalTitulo>
       <MOdalCustoMensal DataMensal={dataSelecionada} ></MOdalCustoMensal>
       <div className=" w-[100%] h-[65vh] flex py-[2vh] gap-[3vh]  " >
-        <Caixa className={" basis-5/12 min-w-[200px] "} >
-        </Caixa>
-        <Caixa className={" basis-7/12 min-w-[200px] "} >
-        </Caixa>
+        <ModalGrafico DataMensal={dataSelecionada} ></ModalGrafico>
+        <ModalTabela></ModalTabela>
       </div>
 
     </body>
