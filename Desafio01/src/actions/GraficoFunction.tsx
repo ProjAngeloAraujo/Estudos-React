@@ -39,13 +39,20 @@ export function GerarGrafioMes(mesAno: string): (string | number)[][] {
     const data = new Date(item.date);
 
     if (
-      data.getFullYear() === ano &&
-      data.getMonth() === mesIndex
+        data.getFullYear() === ano &&
+        data.getMonth() === mesIndex
     ) {
-      Grafico.push([item.category, item.amount]);
-    }
-  });
+        const index = Grafico.findIndex(
+        linha => linha[0] === item.category
+        );
 
-  console.log(Grafico)
+        if (index !== -1) {
+            Grafico[index][1] = (Grafico[index][1] as number) + item.amount;
+        } else {
+            Grafico.push([item.category, item.amount]);
+        }
+    }
+    });
+
   return Grafico;
 }
